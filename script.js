@@ -74,3 +74,19 @@ function sendMessage() {
         input.value = '';
     }
 }
+
+function submitQuestion() {
+    const questionInput = document.getElementById('question-input');
+    const feedback = document.getElementById('question-feedback');
+    const text = questionInput.value.trim();
+
+    if (!text) {
+        feedback.textContent = 'Please enter a question before submitting.';
+        feedback.style.color = 'red';
+        return;
+    }
+
+    feedback.style.color = '#2f6e2f';
+    feedback.textContent = `Question submitted: "${text}". An instructor will respond shortly.`;
+    questionInput.value = '';
+}

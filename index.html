@@ -7,23 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>UIANDRag</h1>
+    <h1>Your Study Buddy</h1>
     
     <div class="tabs">
-        <button class="tab-button active" onclick="showSection('design')">2D/3D Design</button>
-        <button class="tab-button" onclick="showSection('bevy')">Bevy Integration</button>
-        <button class="tab-button" onclick="showSection('chat')">NASA Chat RAG</button>
+        <button class="tab-button active" onclick="showSection('design')">Today's course</button>
+        <button class="tab-button" onclick="showSection('bevy')">Questions</button>
+        <button class="tab-button" onclick="showSection('chat')">Talk to RAG</button>
     </div>
     
     <div id="design" class="section active">
-        <h2>2D/3D Design</h2>
-        <button onclick="window.open('https://www.freecadweb.org/', '_blank')">FreeCAD</button>
-        <button onclick="window.open('https://www.autodesk.com/products/fusion-360/overview', '_blank')">Autodesk Fusion</button>
+        <h2>Today's course</h2>
+        <p>Lecture: Introduction to UI and RAG systems with NASA knowledge integration.</p>
+        <p>In this session, we cover architecture, vector search, retrieval prompts, and UI for RAG conversations.</p>
+        <button onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')">Watch Lecture Video</button>
+        <button onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')" style="margin-left: 10px;">Open Lecture Link</button>
     </div>
     
     <div id="bevy" class="section">
-        <h2>Bevy Integration</h2>
-        <button onclick="window.open('https://bevyengine.org/', '_blank')">Open Bevy</button>
+        <h2>Questions</h2>
+        <p>Enter your question below and submit it to get help from the course instructor.</p>
+        <input type="text" id="question-input" placeholder="Type your question here" style="width: 100%; max-width: 400px;">
+        <button onclick="submitQuestion()">Submit Question</button>
+        <div id="question-feedback" style="margin-top: 10px; color: #444;"></div>
     </div>
     
     <div id="chat" class="section">
