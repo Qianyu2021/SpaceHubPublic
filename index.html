@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceHuH_Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SpaceHuH_Web</h1>
+    
+    <div class="tabs">
+        <button class="tab-button active" onclick="showSection('design')">2D/3D Design</button>
+        <button class="tab-button" onclick="showSection('bevy')">Bevy Integration</button>
+        <button class="tab-button" onclick="showSection('chat')">NASA Chat RAG</button>
+    </div>
+    
+    <div id="design" class="section active">
+        <h2>2D/3D Design</h2>
+        <button onclick="window.open('https://www.freecadweb.org/', '_blank')">FreeCAD</button>
+        <button onclick="window.open('https://www.autodesk.com/products/fusion-360/overview', '_blank')">Autodesk Fusion</button>
+    </div>
+    
+    <div id="bevy" class="section">
+        <h2>Bevy Integration</h2>
+        <button onclick="window.open('https://bevyengine.org/', '_blank')">Open Bevy</button>
+    </div>
+    
+    <div id="chat" class="section">
+        <h2>Ask about NASA Chat RAG</h2>
+        <div id="chat-container">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Ask about NANA...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

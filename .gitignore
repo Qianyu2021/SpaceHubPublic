@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+rag_env/
+.env
+
+# ChromaDB
+chromadb/
+*.db
+
+# Node / misc
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# macOS
+*.DS_Store
+
+# Local history
+.history
+
+# IDE
+*.swp
